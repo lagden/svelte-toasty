@@ -81,7 +81,7 @@ Example via [REPL](https://svelte.dev/repl/d2bf5424289841b2bd773b592b7ddca6?vers
 </svelte:head>
 
 <script>
-import {Toasts, acts} from '$lib/index.js'
+import {Toasts, acts} from '@tadashi/svelte-toasty'
 
 let triggers = [
     {mode: 'normal', message: 'Nothing to say...', lifetime: 5},
