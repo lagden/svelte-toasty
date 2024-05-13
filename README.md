@@ -49,7 +49,7 @@ The `mode` can be:
 - error   || danger
 ```
 
-### CSS Vars - Original.svelte
+### CSS Vars from `Original.svelte`
 
 | vars                    | default                            |
 | ----------------------- | ---------------------------------- |
