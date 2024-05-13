@@ -5,7 +5,7 @@ import {Toasts, acts} from '$lib/index.js'
 
 // JSDOM doesn't have the method yet
 globalThis.Element.prototype.showPopover = function () {
-    return true
+	return true
 }
 
 beforeEach(() => {

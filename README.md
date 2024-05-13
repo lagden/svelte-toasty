@@ -1,11 +1,13 @@
 # svelte-toasty
 
 [![NPM version][npm-img]][npm]
+
 <!-- [![Build Status][ci-img]][ci] -->
 <!-- [![Coverage Status][coveralls-img]][coveralls] -->
 
 [npm-img]: https://img.shields.io/npm/v/@tadashi/svelte-toasty.svg
 [npm]: https://www.npmjs.com/package/@tadashi/svelte-toasty
+
 <!-- [ci-img]: https://github.com/lagden/svelte-toasty/actions/workflows/nodejs.yml/badge.svg -->
 <!-- [ci]: https://github.com/lagden/svelte-toasty/actions/workflows/nodejs.yml -->
 <!-- [coveralls-img]: https://coveralls.io/repos/github/lagden/svelte-toasty/badge.svg?branch=main -->
