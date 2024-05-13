@@ -1,0 +1,23 @@
+#!/bin/sh
+
+DIR="$(cd $(dirname $0) && pwd)"
+BIN_DIR="$(cd $DIR/.. && pwd)"
+
+# Import functions
+. $BIN_DIR/helper/fn
+
+# Go to current directory
+CURR_FOLDER="$(pwd)"
+cd $CURR_FOLDER
+
+echo "PM ----> ${PM}"
+
+if test "${PM}" = "npm"; then
+	test "${NODE_ENV}" = "development" && npm i || npm i --omit=dev --ignore-scripts
+fi
+
+if test "${PM}" = "pnpm"; then
+	test "${NODE_ENV}" = "development" && pnpm i || pnpm i --ignore-scripts
+fi
+
+ok "Installation is done"
