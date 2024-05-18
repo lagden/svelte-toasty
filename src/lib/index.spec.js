@@ -1,12 +1,10 @@
-import {setTimeout} from 'timers/promises'
+// import {setTimeout} from 'timers/promises'
 import {get} from 'svelte/store'
 import {test, expect, beforeEach, vi} from 'vitest'
 import {Toasts, acts} from '$lib/index.js'
 
 // JSDOM doesn't have the method yet
-globalThis.Element.prototype.showPopover = function () {
-	return true
-}
+globalThis.HTMLElement.prototype.showPopover = vi.fn()
 
 beforeEach(() => {
 	document.body.innerHTML = '<main id="xxx"></main>'
