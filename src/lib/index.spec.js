@@ -19,6 +19,17 @@ function doc_query(selector) {
 }
 
 // test('Toasts', async () => {
+// 	const showPopoverSpy = vi.spyOn(globalThis.HTMLElement.prototype, 'showPopover')
+// 	const target = doc_query('main#xxx')
+// 	new Toasts({target})
+
+// 	// acts.add({message: 'go!'})
+
+// 	target.showPopover()
+// 	expect(showPopoverSpy).toHaveBeenCalled()
+// })
+
+// test('Toasts', async () => {
 // 	const target = doc_query('main#xxx')
 // 	new Toasts({target})
 
